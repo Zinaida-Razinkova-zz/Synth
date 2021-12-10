@@ -1,0 +1,99 @@
+.switch {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width:767px) {
+  margin-top: 20px;
+  }
+  @media screen and (min-width:768px) {
+  position: absolute;
+  top: 184px;
+  left: 445px;
+  }
+  @media screen and (min-width:1024px) {
+  left: 532px;
+  }
+  @media screen and (min-width:1440px) {
+  left: 544px;
+  }
+}
+    
+.theme-switch__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 24px;
+  border-radius: 50em;
+  padding: 3px 0;
+}
+  
+.theme-switch__toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+  
+.theme-switch__track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  background-color: $color_accent;
+  border-radius: 50em;
+  cursor: pointer;
+}
+
+.theme-switch__marker {
+  position: relative;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  background-color: $color_white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translateX(19px);
+  transition: transform 250ms var(--timing-function);
+}
+
+.theme-switch__toggle:checked + .theme-switch__track {
+  background-color: $color_accent;
+}
+  
+.theme-switch__toggle:checked ~ .theme-switch__marker {
+  transform: translateX(3px);
+}
+  
+.theme-switch__toggle:focus + .theme-switch__track,
+.theme-switch__toggle:active + .theme-switch__track {
+  background: $color_white;
+  border: 1px solid $color_accent;
+}
+
+.theme-switch__toggle:focus + .theme-switch__track +.theme-switch__marker,
+.theme-switch__toggle:active + .theme-switch__track +.theme-switch__marker{
+  background-color: $color_accent;
+}
+  
+.switch-text{
+  font-family: $font_basic;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  color: $color_text;
+  margin: 0px;
+  &:not(:last-child){
+  margin-right: 30px;
+  }
+  &:not(:first-child){
+  margin-left: 33px;
+  }
+}

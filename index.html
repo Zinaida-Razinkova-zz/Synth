@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Synth</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-wrapper">
+        <nav class="header-nav">
+          <a class="header-logo" href="index.html">
+            <img
+              class="header-logo__img"
+              src="./images/Synth.svg"
+              alt="Logo"
+              width="50"
+            />
+          </a>
+          <ul class="header-menu" data-menu>
+            <li class="header-menu__item">
+              <a href="" class="header-menu__link header-underline">FEED</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="" class="header-menu__link header-menu__opasity"
+                >EXPLORE</a
+              >
+            </li>
+            <li class="header-menu__item">
+              <a href="" class="header-menu__link header-menu__opasity"
+                >DISCUSSIONS</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-account">
+          <p class="header-account__name">Arthur Wood</p>
+          <img
+            class="header-account__img"
+            src="./images/avatar_small.png"
+            alt="Avatar"
+            width="32"
+          />
+          <img
+            class="header-account__arrow"
+            src="./images/arrow_avatar_small.svg"
+            alt="Arrow"
+            width="8"
+          />
+          <img
+            class="header-account__notification"
+            src="./images/notifications.svg"
+            alt="Notifications"
+            width="32"
+          />
+          <img
+            class="header-account__share"
+            src="./images/share_recap.svg"
+            alt="Notifications"
+            width="32"
+          />
+          <img
+            class="header-account__medium"
+            src="./images/medium.svg"
+            alt="Medium"
+            width="32"
+          />
+        </div>
+        <button class="button">+</button>
+      </div>
+    </header>
+    <main>
+      <section class="blog">
+        <div class="container">
+          <div class="sidebar">
+            <div class="sidebar-user">
+              <img
+                class="sidebar-user__avatar"
+                src="./images/avatar.png"
+                alt="Foto user"
+                width="120"
+              />
+              <div>
+                <div class="sidebar-user__wrapper">
+                  <h1 class="sidebar-user__name">Benjamin <br />Clementine</h1>
+                  <img
+                    class="sidebar-dots"
+                    src="./images/icon_dots.svg"
+                    alt="Dots menu"
+                    width="16"
+                  />
+                </div>
+                <div class="sidebar-menu">
+                  <div class="sidebar-menu__report">
+                    <img
+                      class="sidebar-menu__report-icon"
+                      src="./images/icon_report.svg"
+                      alt="Report"
+                      width="20"
+                    />
+                    <p class="sidebar-menu__report-text">Report User</p>
+                    <div class="sidebar-menu__report-background"></div>
+                  </div>
+                  <div class="sidebar-menu__delete">
+                    <img
+                      class="sidebar-menu__delete-icon"
+                      src="./images/icon_delete.svg"
+                      alt="Report"
+                      width="20"
+                    />
+                    <p class="sidebar-menu__delete-text">Block User</p>
+                  </div>
+                </div>
+                <a class="sidebar-user__login" href="">@benclementine</a>
+                <div class="sidebar-user__edit">
+                  <img
+                    class="sidebar-user__edit-img"
+                    src="./images/icon_edit.svg"
+                    alt="Edit"
+                    width="20"
+                  />
+                  <a class="sidebar-user__edit-text" href="">Edit Profile</a>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-data">
+              <p class="sidebar-data__number-left">
+                45 <span class="sidebar-data__text">synths</span>
+              </p>
+              <a class="sidebar-data__number-middle" href=""
+                >110 <span class="sidebar-data__text">followers</span></a
+              >
+              <a class="sidebar-data__number-right" href=""
+                >322 <span class="sidebar-data__text">following</span></a
+              >
+            </div>
+            <h2 class="sidebar-paragraf">
+              Cryptocurrencies including Ethereum, Ripple, and Litecoin have all
+              plunged between 20 to 30 percent each, according to CoinMarketCap.
+              Here is the latest Ripple price news and live updates on XRP,
+              bitcoin and Ethereum.
+            </h2>
+          </div>
+          <div class="switch">
+            <p class="switch-text">Public</p>
+            <div class="theme-switch">
+              <div class="theme-switch__control">
+                <input
+                  class="theme-switch__toggle"
+                  type="checkbox"
+                  name="theme"
+                  id="theme-switch-toggle"
+                  aria-label="Переключить"
+                />
+                <label
+                  aria-hidden="true"
+                  class="theme-switch__track"
+                  for="theme-switch-toggle"
+                >
+                </label>
+                <div aria-hidden="true" class="theme-switch__marker"></div>
+              </div>
+            </div>
+            <p class="switch-text">Private</p>
+          </div>
+          <div class="content">
+            <div class="content-top">
+              <div class="content-block">
+                <h3 class="content-block__paragraf">
+                  New air routes that promise cheap flights in
+                </h3>
+                <div class="content-block__wrapper">
+                  <div class="content-block__avatar"></div>
+                  <p class="content-block__subparagraf">Gregory Watkins</p>
+                  <p class="content-block__text">
+                    <a class="content-block__link" href="">Share</a>
+                  </p>
+                </div>
+              </div>
+              <div class="content-block">
+                <h3 class="content-block__paragraf">
+                  New air routes that promise cheap flights in
+                </h3>
+                <div class="content-block__wrapper">
+                  <div class="content-block__avatar"></div>
+                  <p class="content-block__subparagraf">Gregory Watkins</p>
+                  <p class="content-block__text">
+                    <a class="content-block__link" href="">Share</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-bottom">
+              <div class="content-block content-block--bottom">
+                <p class="content-block__hashtag">
+                  Shared to<a
+                    class="content-block__hashtag content-block__hashtag-link"
+                    href=""
+                    >#discussionaboutanimgttdds…</a
+                  >
+                </p>
+                <div class="content-block__background"></div>
+                <h3 class="content-block__paragraf content-block--paragraf">
+                  New air routes that promise cheap flights in
+                </h3>
+                <div class="content-block__wrapper">
+                  <div class="content-block__avatar"></div>
+                  <p
+                    class="
+                      content-block__subparagraf content-block--subparagraf
+                    "
+                  >
+                    Gregory Watkins
+                  </p>
+
+                  <div class="content-reactions">
+                    <img
+                      class="content-reactions__img"
+                      src="./images/icon_view.svg"
+                      alt="View"
+                      width="16"
+                    />
+                    <p class="content-reactions__text">88</p>
+                    <img
+                      class="content-reactions__img"
+                      src="./images/icon_like.svg"
+                      alt="Like"
+                      width="16"
+                    />
+                    <p class="content-reactions__text">24</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content-block content-block--bottom">
+                <a class="content-block__shared-text" href=""
+                  ><img
+                    class="content-block__shared-img"
+                    src="./images/icon_link.svg"
+                    alt="View"
+                    width="20"
+                  />Shared via weblink</a
+                >
+                <h3 class="content-block__paragraf content-block--paragraf">
+                  New air routes that promise cheap flights in
+                </h3>
+                <div class="content-block__wrapper">
+                  <div class="content-block__avatar"></div>
+                  <p
+                    class="
+                      content-block__subparagraf content-block--subparagraf
+                    "
+                  >
+                    Gregory Watkins
+                  </p>
+
+                  <div class="content-reactions">
+                    <img
+                      class="content-reactions__img"
+                      src="./images/icon_view.svg"
+                      alt="View"
+                      width="16"
+                    />
+                    <p class="content-reactions__text">88</p>
+                    <img
+                      class="content-reactions__img"
+                      src="./images/icon_like.svg"
+                      alt="Like"
+                      width="16"
+                    />
+                    <p class="content-reactions__text">24</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

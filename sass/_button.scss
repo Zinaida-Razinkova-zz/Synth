@@ -1,0 +1,44 @@
+.button {
+  position: absolute;
+  top: 80px;
+  font-size: 40px;
+  background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+  border-radius: 50%;
+  border: none;
+  color: $color_white;
+  &:hover,
+  &:focus 
+  { 
+   background: $color_white;
+   color: $color_accent;
+   border: 1px solid $color_accent;
+    }
+    @media screen and (max-width: 374px) {
+    display: none;
+    }
+    @media screen and (min-width: 375px) {
+    top: 55px;
+    left: 255px;
+    width: 44px;
+    height: 44px;
+    }
+    @media screen and (min-width: 425px) {
+    top: 52px;
+    left: 280px;
+    width: 54px;
+    height: 54px;
+    }
+    @media screen and (min-width:768px) {
+    top: 84px;
+    left: 650px;
+    width: 64px;
+    height: 64px;
+    }
+    @media screen and (min-width:1024px) {
+    left: 865px;
+    }
+    @media screen and (min-width:1440px) {
+    top: 80px;
+    left: 1241px;
+    }
+}
