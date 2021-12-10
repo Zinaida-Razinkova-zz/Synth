@@ -2,5 +2,5 @@
 Run project on local computer:
 
 - Clone this repository.
-- On the status bar panel, click Go Live.
+- Сlick Go Live оn the status bar panel.
 - Or open index.html using a browser.
