@@ -45,11 +45,12 @@
 .sidebar-dots {
  width: 16px;
  margin-bottom: 37px;
+ fill: $color_text;
 }
 
 .sidebar-menu {
+  display: none;
   position: absolute;
-  top:112px;
   left: 444px;
   z-index: 2;
   width: 177px;
@@ -61,24 +62,29 @@
   backdrop-filter: blur(21.7463px);
   border-radius: 8px;
   opacity: 0.94;
+  
   @media screen and (min-width: 1025px) {
+    top:112px;
+    left: 280px;
+    }
+  @media screen and (min-width: 1440px) {
     top:112px;
     left: 310px;
     }
   @media screen and (max-width: 1024px) { 
-  left: 394px;
-  }
-  @media screen and (max-width:768px) {
-    left: 360px;
+    left: 304px;
     }
   @media screen and (max-width:767px) {
-    top: 80px;
     left: 180px;
   }
   @media screen and (max-width:424px) {
-    top: 80px;
-    left: 120px;
+    top: 70px;
+    left: 110px;
     }
+}
+
+.sidebar-menu.is-open {
+  display: block;
 }
 
 .sidebar-menu__report {
@@ -198,7 +204,7 @@
 .sidebar-data__number-left,
 .sidebar-data__number-right {
   margin-left: -7px;
-  &:not(:last-child){
+  &:not(:last-child) {
      margin-right: 47px;
     }
 }
@@ -208,12 +214,12 @@
   margin-right: 54px;
 }
 
-.sidebar-data__text{
+.sidebar-data__text {
   font-size: 16px;
   font-weight: normal;
 }
 
-.sidebar-paragraf{
+.sidebar-paragraf {
   max-width: 350px;
   font-family: $font_basic;
   font-style: normal;
@@ -224,4 +230,20 @@
   margin: 0;
   margin-top: 23px;
   margin-left: 1px;
+}
+
+.sidebar-button {
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    .sidebar-dots{
+      fill: $color_accent;
+      }
+  }
 }

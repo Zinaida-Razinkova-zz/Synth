@@ -70,29 +70,6 @@ img {
   height: auto;
 }
 
-.button:hover, .button:focus {
-  background: transparent;
-}
-
-.button-text {
-  font-style: normal;
-}
-
-.title {
-  font-family: inherit;
-  margin: 0px;
-}
-
-@media screen and (max-width: 768px) {
-  .title {
-    font-size: 36px;
-  }
-}
-
-.subtitle {
-  font-family: inherit;
-}
-
 .header {
   position: relative;
   background: #ffffff;
@@ -337,11 +314,12 @@ img {
 .sidebar-dots {
   width: 16px;
   margin-bottom: 37px;
+  fill: #3E4056;
 }
 
 .sidebar-menu {
+  display: none;
   position: absolute;
-  top: 112px;
   left: 444px;
   z-index: 2;
   width: 177px;
@@ -359,34 +337,38 @@ img {
 @media screen and (min-width: 1025px) {
   .sidebar-menu {
     top: 112px;
+    left: 280px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sidebar-menu {
+    top: 112px;
     left: 310px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .sidebar-menu {
-    left: 394px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar-menu {
-    left: 360px;
+    left: 304px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .sidebar-menu {
-    top: 80px;
     left: 180px;
   }
 }
 
 @media screen and (max-width: 424px) {
   .sidebar-menu {
-    top: 80px;
-    left: 120px;
+    top: 70px;
+    left: 110px;
   }
+}
+
+.sidebar-menu.is-open {
+  display: block;
 }
 
 .sidebar-menu__report {
@@ -545,6 +527,19 @@ img {
   margin: 0;
   margin-top: 23px;
   margin-left: 1px;
+}
+
+.sidebar-button {
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.sidebar-button:hover .sidebar-dots, .sidebar-button:focus .sidebar-dots {
+  fill: #ED5267;
 }
 
 @media screen and (max-width: 767px) {
@@ -779,8 +774,10 @@ img {
 }
 
 .content-block__shared-img {
-  width: 20px;
+  width: 18px;
   display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
 }
 
 @media screen and (max-width: 1439px) {
@@ -796,8 +793,7 @@ img {
   line-height: 1.1;
   color: #3E4056;
   margin: 0px;
-  margin-top: -3px;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .content-block__shared-text:hover, .content-block__shared-text:focus {
@@ -939,8 +935,7 @@ img {
 
 .button {
   position: absolute;
-  top: 80px;
-  font-size: 40px;
+  z-index: 1;
   background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
   border-radius: 50%;
   border: none;
@@ -955,7 +950,11 @@ img {
 
 @media screen and (max-width: 374px) {
   .button {
-    display: none;
+    top: 65px;
+    left: 235px;
+    width: 34px;
+    height: 34px;
+    font-size: 28px;
   }
 }
 
@@ -965,6 +964,7 @@ img {
     left: 255px;
     width: 44px;
     height: 44px;
+    font-size: 30px;
   }
 }
 
@@ -974,21 +974,24 @@ img {
     left: 280px;
     width: 54px;
     height: 54px;
+    font-size: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .button {
-    top: 84px;
+    top: 81px;
     left: 650px;
     width: 64px;
     height: 64px;
+    font-size: 34px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .button {
     left: 865px;
+    font-size: 36px;
   }
 }
 
@@ -996,6 +999,7 @@ img {
   .button {
     top: 80px;
     left: 1241px;
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

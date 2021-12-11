@@ -1,44 +1,51 @@
 .button {
   position: absolute;
-  top: 80px;
-  font-size: 40px;
+  z-index: 1;
   background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
   border-radius: 50%;
   border: none;
   color: $color_white;
   &:hover,
-  &:focus 
-  { 
+  &:focus { 
    background: $color_white;
    color: $color_accent;
    border: 1px solid $color_accent;
     }
     @media screen and (max-width: 374px) {
-    display: none;
+    top: 65px;
+    left: 235px;
+    width: 34px;
+    height: 34px;
+    font-size: 28px;
     }
     @media screen and (min-width: 375px) {
     top: 55px;
     left: 255px;
     width: 44px;
     height: 44px;
+    font-size: 30px;
     }
     @media screen and (min-width: 425px) {
     top: 52px;
     left: 280px;
     width: 54px;
     height: 54px;
+    font-size: 32px;
     }
     @media screen and (min-width:768px) {
-    top: 84px;
+    top: 81px;
     left: 650px;
     width: 64px;
     height: 64px;
+    font-size: 34px;
     }
     @media screen and (min-width:1024px) {
     left: 865px;
+    font-size: 36px;
     }
     @media screen and (min-width:1440px) {
     top: 80px;
     left: 1241px;
+    font-size: 40px;
     }
 }
