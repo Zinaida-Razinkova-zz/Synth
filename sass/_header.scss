@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   background: $color_white; 
   box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
 }
@@ -52,7 +51,7 @@
       }
 }
 
-.header-menu__opasity {
+.header-menu__opacity {
   color: $color_text;
   mix-blend-mode: normal;
   opacity: 0.6;
@@ -75,7 +74,7 @@
   }
 }
 
-.header-account {
+.header-user {
   display: flex;
   align-items: center;
   margin-bottom: 38px;
@@ -94,7 +93,7 @@
     }
 }
 
-.header-account__name   {
+.header-user__name   {
   font-family: $font_basic;
   font-style: normal;
   font-weight: normal;
@@ -111,16 +110,16 @@
     }
 }
 
-.header-account__img {
+.header-user__img {
   width: 32px;
   height: 32px;
   margin-right: 16px;
   @media screen and (max-width: 767px) {
-    margin-right: 8px;
+    display: none;
     }
 }
 
-.header-account__arrow {
+.header-user__arrow {
   width: 8px;
   height: 10px;
   fill: $color_text;
@@ -130,9 +129,9 @@
 }
 
 
-.header-account__notification, 
-.header-account__share, 
-.header-account__medium{
+.header-user__notification, 
+.header-user__share, 
+.header-user__medium{
   @media screen and (max-width: 767px) {
     display: none;
     }

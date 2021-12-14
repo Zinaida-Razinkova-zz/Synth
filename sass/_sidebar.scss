@@ -46,6 +46,7 @@
  width: 16px;
  margin-bottom: 37px;
  fill: $color_text;
+ cursor: pointer;
 }
 
 .sidebar-menu {
@@ -219,7 +220,7 @@
   font-weight: normal;
 }
 
-.sidebar-paragraf {
+.sidebar-paragraph {
   max-width: 350px;
   font-family: $font_basic;
   font-style: normal;

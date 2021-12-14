@@ -1,19 +1,20 @@
 .switch {
   display: flex;
   align-items: center;
+
   @media screen and (max-width:767px) {
   margin-top: 20px;
   }
   @media screen and (min-width:768px) {
-  position: absolute;
-  top: 184px;
-  left: 445px;
+  position: relative;
+  top: -344px;
+  left: 390px;
   }
   @media screen and (min-width:1024px) {
-  left: 532px;
+  left: 400px;
   }
   @media screen and (min-width:1440px) {
-  left: 544px;
+  left: 408px;
   }
 }
     
